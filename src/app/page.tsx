@@ -31,8 +31,8 @@ export default function Home() {
         </h1>
 
         {/* 소개글 */}
-        <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed mb-8 max-w-xs">
-          안녕하세요! 바이브 코딩을 배우고 있는 대학생입니다
+        <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed mb-8 max-w-sm">
+          문제를 코드로 해결하고 더 나은 사용자 경험을 고민하는 주니어 개발자입니다.
         </p>
 
         {/* 심플 링크 목록 */}

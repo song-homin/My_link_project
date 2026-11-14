@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    
+    <!-- Skin Tone Gradients -->
+    <linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE0BD"/>
+      <stop offset="100%" stop-color="#F7CFA4"/>
+    </linearGradient>
+    <linearGradient id="neckShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EAB98D"/>
+      <stop offset="100%" stop-color="#FFE0BD"/>
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="100%" stop-color="#1A202C"/>
+    </linearGradient>
+
+    <!-- Hoodie Gradient -->
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    
+    <!-- Headphone Gradient -->
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Glasses Frame -->
+    <linearGradient id="glassesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B5563"/>
+      <stop offset="100%" stop-color="#1F2937"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" fill="url(#bgGrad)"/>
+  <circle cx="100" cy="100" r="94" fill="#F8FAFC" opacity="0.95"/>
+
+  <!-- Inner Ambient Glow -->
+  <circle cx="100" cy="80" r="70" fill="#EEF2FF" opacity="0.8"/>
+
+  <!-- Headphones Band -->
+  <path d="M 52 92 C 50 48, 150 48, 148 92" fill="none" stroke="url(#phoneGrad)" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Hoodie Body -->
+  <path d="M 40 196 C 40 155, 66 142, 85 138 L 85 152 C 85 160, 115 160, 115 152 L 115 138 C 134 142, 160 155, 160 196 Z" fill="url(#hoodieGrad)" filter="url(#softShadow)"/>
+  
+  <!-- Hoodie Strings & Collar -->
+  <path d="M 85 140 C 95 152, 105 152, 115 140" fill="none" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 92 148 L 92 170" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 108 148 L 108 170" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Neck -->
+  <rect x="88" y="116" width="24" height="26" rx="4" fill="url(#neckShadow)"/>
+
+  <!-- Ears -->
+  <circle cx="67" cy="100" r="10" fill="url(#skin)"/>
+  <circle cx="133" cy="100" r="10" fill="url(#skin)"/>
+
+  <!-- Headphone Earcups -->
+  <rect x="52" y="86" width="14" height="28" rx="7" fill="url(#phoneGrad)" filter="url(#softShadow)"/>
+  <rect x="55" y="90" width="8" height="20" rx="4" fill="#34D399"/>
+  <rect x="134" y="86" width="14" height="28" rx="7" fill="url(#phoneGrad)" filter="url(#softShadow)"/>
+  <rect x="137" y="90" width="8" height="20" rx="4" fill="#34D399"/>
+
+  <!-- Head/Face -->
+  <path d="M 72 82 C 72 58, 128 58, 128 82 C 128 112, 118 126, 100 126 C 82 126, 72 112, 72 82 Z" fill="url(#skin)" filter="url(#softShadow)"/>
+
+  <!-- Cheeks Blushing -->
+  <circle cx="80" cy="104" r="6" fill="#FDA4AF" opacity="0.5"/>
+  <circle cx="120" cy="104" r="6" fill="#FDA4AF" opacity="0.5"/>
+
+  <!-- Stylish Modern Hair -->
+  <path d="M 68 80 C 66 60, 80 44, 102 44 C 122 44, 134 56, 134 76 C 134 82, 130 84, 126 78 C 122 72, 116 66, 100 66 C 86 66, 76 74, 74 84 C 73 88, 69 86, 68 80 Z" fill="url(#hairGrad)"/>
+  <path d="M 74 74 C 84 64, 96 65, 106 68 C 114 70, 122 68, 126 62" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Eyes (Friendly smiling curved or open with catchlight) -->
+  <ellipse cx="86" cy="94" rx="4" ry="4.5" fill="#1F2937"/>
+  <circle cx="87.5" cy="92.5" r="1.5" fill="#FFFFFF"/>
+  <ellipse cx="114" cy="94" rx="4" ry="4.5" fill="#1F2937"/>
+  <circle cx="115.5" cy="92.5" r="1.5" fill="#FFFFFF"/>
+
+  <!-- Eyebrows -->
+  <path d="M 80 86 Q 86 83, 92 86" fill="none" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 108 86 Q 114 83, 120 86" fill="none" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M 98 98 Q 100 102, 103 100" fill="none" stroke="#E2A676" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Smile -->
+  <path d="M 92 108 Q 100 116, 108 108" fill="none" stroke="#B91C1C" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 95 109 Q 100 114, 105 109" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- Cool Modern Glasses -->
+  <rect x="76" y="87" width="19" height="15" rx="5" fill="none" stroke="url(#glassesGrad)" stroke-width="2.2"/>
+  <rect x="105" y="87" width="19" height="15" rx="5" fill="none" stroke="url(#glassesGrad)" stroke-width="2.2"/>
+  <path d="M 95 93 Q 100 91, 105 93" fill="none" stroke="url(#glassesGrad)" stroke-width="2.2"/>
+  <path d="M 76 92 L 67 90" fill="none" stroke="url(#glassesGrad)" stroke-width="1.8"/>
+  <path d="M 124 92 L 133 90" fill="none" stroke="url(#glassesGrad)" stroke-width="1.8"/>
+
+  <!-- Sparkle / Tech Vibe Star -->
+  <path d="M 152 46 Q 155 46, 155 42 Q 155 46, 158 46 Q 155 46, 155 50 Q 155 46, 152 46 Z" fill="#FBBF24"/>
+  <path d="M 42 120 Q 44 120, 44 117 Q 44 120, 46 120 Q 44 120, 44 123 Q 44 120, 42 120 Z" fill="#60A5FA"/>
+</svg>

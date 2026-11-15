@@ -9,11 +9,11 @@ export default function Home() {
         {/* 프로필 이미지 */}
         <div className="w-24 h-24 rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 shadow-sm mb-5">
           <Image
-            src={`${basePath}/profile.svg`}
-            alt="송호민 프로필 사진"
+            src={`${basePath}/profile.jpg`}
+            alt="스튜어트 던켈 생쥐 유화"
             width={96}
             height={96}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
             priority
           />
         </div>
